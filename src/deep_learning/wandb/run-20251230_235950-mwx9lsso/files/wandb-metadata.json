@@ -1,0 +1,40 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.10.9",
+  "startedAt":  "2025-12-30T18:29:50.780324Z",
+  "program":  "c:\\Users\\Abhishek Raj\\Desktop\\Machine_Learning\\src\\deep_learning\\peft_langgraph.ipynb",
+  "codePath":  "c:\\Users\\Abhishek Raj\\Desktop\\Machine_Learning\\src\\deep_learning\\peft_langgraph.ipynb",
+  "codePathLocal":  "peft_langgraph.ipynb",
+  "git":  {
+    "remote":  "https://github.com/Abhishekbotx/Machine-Learning.git",
+    "commit":  "cf512760c0c069290b5bdcb665ec532e87852fec"
+  },
+  "email":  "abhishekkumar703394@gmail.com",
+  "root":  "c:\\Users\\Abhishek Raj\\Desktop\\Machine_Learning\\src\\deep_learning",
+  "host":  "DESKTOP-OHA0FC1",
+  "executable":  "c:\\Users\\Abhishek Raj\\Desktop\\Machine_Learning\\venv\\Scripts\\python.exe",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce GTX 1650",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "443529818112",
+      "used":  "403860307968"
+    }
+  },
+  "memory":  {
+    "total":  "16477155328"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce GTX 1650",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  896,
+      "architecture":  "Turing",
+      "uuid":  "GPU-552150a2-c605-0803-4ad0-96e4a104f53b"
+    }
+  ],
+  "cudaVersion":  "12.9",
+  "writerId":  "2yfpc34cb7otjv82grgnxo8cobgt71zn"
+}

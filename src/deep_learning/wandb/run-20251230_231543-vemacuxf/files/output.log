@@ -1,0 +1,23 @@
+c:\Users\Abhishek Raj\Desktop\Machine_Learning\venv\lib\site-packages\torch\utils\data\dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+c:\Users\Abhishek Raj\Desktop\Machine_Learning\venv\lib\site-packages\transformers\utils\generic.py:255: FutureWarning: The input object of type 'Tensor' is an array-like implementing one of the corresponding protocols (`__array__`, `__array_interface__` or `__array_struct__`); but not a sequence (or 0-D). In the future, this object will be coerced as if it was first converted using `np.array(obj)`. To retain the old behaviour, you have to either modify the type 'Tensor', or assign to an empty array created with `np.empty(correct_shape, dtype=object)`.
+  arr = np.array(obj)
+c:\Users\Abhishek Raj\Desktop\Machine_Learning\venv\lib\site-packages\transformers\utils\generic.py:255: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  arr = np.array(obj)
+False
+0
+False
+0
+CUDA not available
+False
+0
+CUDA not available
+False
+0
+False
+0
+False
+0
+Torch version: 2.9.1+cpu
+CUDA available: False
+GPU count: 0
