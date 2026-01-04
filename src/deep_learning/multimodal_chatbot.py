@@ -44,4 +44,31 @@ if st.button("Generate"):
 
 
 
-     
+st.title("AI Image Caption Generator")
+
+uploaded_image = st.file_uploader(
+    "Upload an image for caption generation",
+    type=["jpg", "jpeg", "png"]
+)
+
+if uploaded_image:
+    image = Image.open(uploaded_image)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
+
+    if st.button("Generate Caption"):
+        try:
+            with st.spinner("Generating caption..."):
+                response = client.models.generate_content(
+                    model="gemini-2.0-flash",
+                    contents=[
+                        "What is this image about?",
+                        image
+                    ]
+                )
+
+            st.subheader("Generated Caption")
+            st.write(response.text)
+
+        except Exception as e:
+            st.error("Error generating caption")
+            st.write(e)            
