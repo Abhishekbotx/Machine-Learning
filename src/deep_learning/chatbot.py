@@ -102,3 +102,18 @@ def stream_graph_updates(user_input: str):
     return assistant_response
 
 
+# Display chat history
+for role, message in st.session_state.messages:
+    with st.chat_message(role):
+        st.markdown(message)
+
+# Handle new input
+if prompt := st.chat_input("What is your question?"):
+    with st.chat_message("user"):
+        st.markdown(prompt)
+    
+    st.session_state.messages.append(("user", prompt))
+    
+    response = stream_graph_updates(prompt)
+    
+    st.session_state.messages.append(("assistant", response))
