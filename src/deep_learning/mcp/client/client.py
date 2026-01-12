@@ -32,8 +32,10 @@ async def run_agent():
             response = await agent.ainvoke({
                 "messages": [
                     
-                    {"role": "user", "content": "What is 4 * 2"}
-
+                    # {"role": "user", "content": "What is 4 * 2"}
+                    # {"role": "user", "content": "What is 4 / 2"}
+                    {"role": "user", "content": "What is 4 - 2"}
+                    # {"role": "user", "content": "what is the weather in mohali?"}
                 ]
             })
             
