@@ -39,7 +39,24 @@ async def run_agent():
 
             # 5. Run the query locally
             print("Running agent with local Llama 3.1...")
-            
+            response = await agent.ainvoke({
+                "messages": [
+                    
+                    # {"role": "user", "content": "What is 4 * 2"}
+                    # {"role": "user", "content": "What is 4 / 2"}
+                    {"role": "user", "content": "What is 4 - 2"}
+                    # {"role": "user", "content": "what is the weather in mohali?"}
+                ]
+            })
             
             return response
 
+if __name__ == "__main__":
+    try:
+        result = asyncio.run(run_agent())
+        # print("results here::",result)
+        print("\n--- Final Answer ---")
+        # Agent results are returned as a list of messages
+        print(result["messages"][-1].content) #ectracting the last index of the message key
+    except Exception as e:
+        print(f"Error: {e}")
