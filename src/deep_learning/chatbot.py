@@ -1,9 +1,10 @@
 import os
 from dotenv import load_dotenv
+import langchain_tavily
 from typing_extensions import TypedDict, Annotated
 # from langchain_openai import ChatOpenAI
 from langchain_core.messages import BaseMessage
-from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_tavily import TavilySearch
 
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
@@ -29,7 +30,7 @@ llm = ChatGoogleGenerativeAI(
     temperature=0.7
 )
 
-tool = TavilySearchResults(max_results=2)
+tool = TavilySearch(max_results=2)
 tools = [tool]
 
 llm_with_tools = llm.bind_tools(tools)
